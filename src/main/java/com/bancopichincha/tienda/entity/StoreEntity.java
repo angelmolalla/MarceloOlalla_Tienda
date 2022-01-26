@@ -36,5 +36,4 @@ public class StoreEntity {
 	@JoinTable(name = "STOREPRODUCT", joinColumns = @JoinColumn(name = "STORE_ID"), inverseJoinColumns = @JoinColumn(name = "PRODUCT_ID"), uniqueConstraints = {
 			@UniqueConstraint(columnNames = { "STORE_ID", "PRODUCT_ID" }) })
 	private List<ProductEntity> listProduct;
-	
 }

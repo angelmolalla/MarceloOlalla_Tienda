@@ -1,6 +1,9 @@
 package com.bancopichincha.tienda.services;
 
 import java.util.List;
+
+import org.springframework.web.multipart.MultipartFile;
+
 import com.bancopichincha.tienda.dto.ClientRequest;
 import com.bancopichincha.tienda.entity.ClientEntity;
 
@@ -15,5 +18,7 @@ public interface IClientService {
 	public void update(ClientRequest clientRequest);
 	
 	public void delete(String numberIdentification);
+	
+	public void updatePhoto(MultipartFile file, String numberIdentification);
 	
 }

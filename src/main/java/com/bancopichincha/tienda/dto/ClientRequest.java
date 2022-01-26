@@ -13,7 +13,4 @@ public class ClientRequest {
 	@NotBlank(message = "El nombre del cliente esta vacio")
 	private String name;
 	
-	private String photo;
-
-	
 }
